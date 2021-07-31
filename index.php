@@ -29,7 +29,7 @@ function consulta($str){
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch,CURLOPT_URL,"http://brasilapi.simplescontrole.com.br/cnpj/consulta-cnpj/?cnpj=$str&access-token=FWuajX_lozDCQGMkIJ5r43mhE5cMpa5O&_format=json");
+curl_setopt($ch,CURLOPT_URL,"http://brasilapi.simplescontrole.com.br/cnpj/consulta-cnpj/?cnpj=$str&access-token=&_format=json");
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
 $data = curl_exec($ch);
